@@ -1,4 +1,4 @@
-# 客厅直播 · 央视频网页电视版
+# TV · 客厅直播 · 央视频网页电视版
 
 Kotlin / Android TV APK，**0.5.0 / versionCode 6**，包名 `cn.v65.live`。Android 6 / API 23 及以上；当前实机为华为 HEGE-560B、Android 10。应用不依赖 Google 服务，无须电脑或服务器长期运行。这是 APK，不是 HarmonyOS NEXT HAP。
 
