@@ -7,3 +7,5 @@ local.properties
 *.jks
 *.keystore
 node_modules/
+__pycache__/
+*.pyc

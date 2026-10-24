@@ -4,7 +4,7 @@ Kotlin / Android TV APK，**0.5.0 / versionCode 6**，包名 `cn.v65.live`。And
 
 ## 当前播放方式
 
-默认入口是 `OfficialWebActivity`，在一个 WebView 中打开央视频官方电视页面。首次启动 CCTV1，以后恢复上次频道；频道不存在时回退 CCTV1。目录使用原有缓存与内置快照，后台更新，不阻塞播放。
+默认入口是 `OfficialWebActivity`，在一个 WebView 中打开央视频官方电视页面。首次启动 CCTV1，以后恢复上次频道；频道不存在时回退 CCTV1。目录使用原有缓存与内置快照，不阻塞播放。目录缓存 24 小时、节目单缓存 5 分钟（空节目单 1 分钟），有效缓存直接使用；过期或损坏时获取并校验新数据后再替换。更新失败保留旧数据，并标明过期。详见 [缓存更新与构建记录](docs/CACHE-UPDATE.md)。
 
 官网负责直播、播放验证、地址刷新、登录与版权提示。**本版实际使用官方网页播放，不将它标记为原生直播成功。** 旧原生播放器源码保留供历史参考，不作为默认入口，也不会在启动时取源或验证第三方地址。
 
@@ -31,8 +31,8 @@ powershell -NoProfile -ExecutionPolicy Bypass -File tools\build.ps1 -InstallSdk
 # 编译、Lint、单元测试
 powershell -NoProfile -ExecutionPolicy Bypass -File tools\build.ps1
 # 覆盖安装并启动，保留数据
-powershell -NoProfile -ExecutionPolicy Bypass -File tools\install.ps1 -DeviceAddress 192.168.1.76:5555 -ApkPath dist\living-room-live-v0.5.0-debug.apk
-Get-FileHash dist\living-room-live-v0.5.0-debug.apk -Algorithm SHA256
+powershell -NoProfile -ExecutionPolicy Bypass -File tools\install.ps1 -DeviceAddress 192.168.1.76:5555 -ApkPath dist\living-room-live-v0.5.0-cache-debug.apk
+Get-FileHash dist\living-room-live-v0.5.0-cache-debug.apk -Algorithm SHA256
 # 打包可复现源码与实机报告摘要（不含 SDK、缓存和签名私钥）
 powershell -NoProfile -ExecutionPolicy Bypass -File tools\package-source.ps1
 ```
@@ -43,7 +43,7 @@ powershell -NoProfile -ExecutionPolicy Bypass -File tools\package-source.ps1
 
 ## 测试与诊断
 
-构建、Lint 和 31 项单元测试通过；Lint 仍有警告，详情及实机结果见 [测试记录](docs/TEST-REPORT.md)。用户已经确认官网版电视画面、声音正常；每台频道截图、媒体推进与声音现场核对分别记录。
+缓存更新的构建、Lint 和单元测试结果见 [构建记录](docs/CACHE-UPDATE.md)。用户已确认此前官网版电视画面、声音正常；本次缓存修改未重新执行实机播放、20 次切台或 30 分钟稳定性验收。
 
 Node.js 22 可运行实机检查，不导出媒体地址或 Cookie：
 
@@ -55,6 +55,6 @@ node tools/verify-web-tv.mjs --device 192.168.1.76:5555 --mode soak --minutes 30
 
 这些命令需要应用在前台且电视保持开机；会切台或持续采样。输出位于 `docs/evidence/v050/`，媒体计时推进不能替代对实际画面、声音的核对。
 
-没有录制、下载、回看、投屏或市场发布功能。使用正常 HTTPS 验证，网页不允许混合 HTTP 内容；历史原生模块的明文网络配置仍保留。源码说明见 [架构](docs/SOURCE-AND-ARCHITECTURE.md)，许可证见 [THIRD-PARTY.md](THIRD-PARTY.md) 与 [LICENSE](LICENSE)。
+没有录制、下载、回看、投屏或市场发布功能。使用正常 HTTPS 验证，网页不允许混合 HTTP 内容；历史原生模块的明文网络配置仍保留。许可证见 [THIRD-PARTY.md](THIRD-PARTY.md) 与 [LICENSE](LICENSE)。
 
-旧取源 / 导出工具保留在 `tools/`，不参与 0.5.0 默认播放。`dist/official-streams-20261024` 是历史调查产物，临时地址可能过期，不能作为本版播放成功证据。
+旧取源 / 导出工具保留在 `tools/`，不参与 0.5.0 默认播放。

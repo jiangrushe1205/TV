@@ -1,4 +1,4 @@
-param([string]$Output = 'dist/living-room-live-v0.5.0-source.zip')
+param([string]$Output = 'dist/living-room-live-v0.5.0-cache-source.zip')
 $ErrorActionPreference = 'Stop'
 $root = (Resolve-Path (Join-Path $PSScriptRoot '..')).Path
 $destination = [IO.Path]::GetFullPath((Join-Path $root $Output))
@@ -12,16 +12,16 @@ $files = @(
     '.gitignore', 'build.gradle.kts', 'gradle.properties', 'settings.gradle.kts',
     'app/build.gradle.kts', 'app/proguard-rules.pro', 'LICENSE', 'README.md',
     'THIRD-PARTY.md', 'package.json', 'package-lock.json',
-    'docs/INSTALL-v0.5.0.md', 'docs/SOURCE-AND-ARCHITECTURE.md', 'docs/TEST-REPORT.md',
-    'tools/bootstrap.ps1', 'tools/build.ps1', 'tools/install.ps1',
-    'tools/verify-web-tv.mjs', 'tools/inspect-tv-webview.mjs',
-    'tools/package-source.ps1',
-    'docs/evidence/v050/channels/report.json',
-    'docs/evidence/v050/switches-intent/report.json',
-    'docs/evidence/v050/soak-final/report.json'
+    'docs/CACHE-UPDATE.md'
 )
 $files += Get-ChildItem -LiteralPath (Join-Path $root 'app/src') -Recurse -File |
     ForEach-Object { $_.FullName.Substring($root.Length + 1) }
+$files += Get-ChildItem -LiteralPath (Join-Path $root 'tools') -Recurse -File |
+    Where-Object { $_.Extension -in @('.ps1', '.mjs', '.js', '.py', '.proto') -and $_.FullName -notmatch '[\\/]__pycache__[\\/]' } |
+    ForEach-Object { $_.FullName.Substring($root.Length + 1) }
+# Include only existing evidence; do not require deleted historical test outputs.
+$evidence = Join-Path $root 'docs/evidence/v050/channels-final/report.json'
+if (Test-Path -LiteralPath $evidence) { $files += 'docs/evidence/v050/channels-final/report.json' }
 if (Test-Path -LiteralPath $destination) { Remove-Item -LiteralPath $destination }
 $archive = [IO.Compression.ZipFile]::Open($destination, [IO.Compression.ZipArchiveMode]::Create)
 try {
