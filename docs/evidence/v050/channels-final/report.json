@@ -1,0 +1,227 @@
+{
+  "mode": "channels",
+  "device": "192.168.1.76:5555",
+  "started": "2026-10-24T00:32:00.613Z",
+  "completed": true,
+  "checks": [
+    {
+      "name": "CCTV1",
+      "pid": "600001859",
+      "progressed": true,
+      "elapsedMs": 7615,
+      "latest": {
+        "pid": "600001859",
+        "generation": 10,
+        "freshMedia": true,
+        "foreground": true,
+        "ready": "complete",
+        "viewport": [
+          960,
+          540
+        ],
+        "fitted": true,
+        "layout": true,
+        "officialMessage": "蓝光",
+        "videoCount": 1,
+        "media": {
+          "time": 0.750157,
+          "ready": 4,
+          "paused": false,
+          "muted": false,
+          "volume": 0.5,
+          "size": [
+            1920,
+            1080
+          ],
+          "frames": 20,
+          "dropped": 0,
+          "audioBytes": 14045,
+          "error": 0
+        }
+      }
+    },
+    {
+      "name": "CCTV3",
+      "pid": "600001801",
+      "progressed": true,
+      "elapsedMs": 9995,
+      "latest": {
+        "pid": "600001801",
+        "generation": 12,
+        "freshMedia": true,
+        "foreground": true,
+        "ready": "complete",
+        "viewport": [
+          960,
+          540
+        ],
+        "fitted": true,
+        "layout": true,
+        "officialMessage": "蓝光",
+        "videoCount": 1,
+        "media": {
+          "time": 0.738688,
+          "ready": 4,
+          "paused": false,
+          "muted": false,
+          "volume": 0.5,
+          "size": [
+            1920,
+            1080
+          ],
+          "frames": 21,
+          "dropped": 2,
+          "audioBytes": 14052,
+          "error": 0
+        }
+      }
+    },
+    {
+      "name": "CCTV5",
+      "pid": "600001818",
+      "progressed": true,
+      "elapsedMs": 11273,
+      "latest": {
+        "pid": "600001818",
+        "generation": 14,
+        "freshMedia": true,
+        "foreground": true,
+        "ready": "complete",
+        "viewport": [
+          960,
+          540
+        ],
+        "fitted": true,
+        "layout": true,
+        "officialMessage": "蓝光",
+        "videoCount": 1,
+        "media": {
+          "time": 0.815945,
+          "ready": 4,
+          "paused": false,
+          "muted": false,
+          "volume": 0.5,
+          "size": [
+            1920,
+            1080
+          ],
+          "frames": 22,
+          "dropped": 2,
+          "audioBytes": 14969,
+          "error": 0
+        }
+      }
+    },
+    {
+      "name": "CCTV13",
+      "pid": "600001811",
+      "progressed": true,
+      "elapsedMs": 7674,
+      "latest": {
+        "pid": "600001811",
+        "generation": 16,
+        "freshMedia": true,
+        "foreground": true,
+        "ready": "complete",
+        "viewport": [
+          960,
+          540
+        ],
+        "fitted": true,
+        "layout": true,
+        "officialMessage": "蓝光",
+        "videoCount": 1,
+        "media": {
+          "time": 0.69301,
+          "ready": 4,
+          "paused": false,
+          "muted": false,
+          "volume": 0.5,
+          "size": [
+            1920,
+            1080
+          ],
+          "frames": 20,
+          "dropped": 1,
+          "audioBytes": 13690,
+          "error": 0
+        }
+      }
+    },
+    {
+      "name": "Hunan",
+      "pid": "600002475",
+      "progressed": true,
+      "elapsedMs": 9710,
+      "latest": {
+        "pid": "600002475",
+        "generation": 18,
+        "freshMedia": true,
+        "foreground": true,
+        "ready": "complete",
+        "viewport": [
+          960,
+          540
+        ],
+        "fitted": true,
+        "layout": true,
+        "officialMessage": "蓝光",
+        "videoCount": 1,
+        "media": {
+          "time": 0.894394,
+          "ready": 4,
+          "paused": false,
+          "muted": false,
+          "volume": 0.5,
+          "size": [
+            1920,
+            1080
+          ],
+          "frames": 25,
+          "dropped": 1,
+          "audioBytes": 16056,
+          "error": 0
+        }
+      }
+    },
+    {
+      "name": "Dongfang",
+      "pid": "600002483",
+      "progressed": true,
+      "elapsedMs": 9065,
+      "latest": {
+        "pid": "600002483",
+        "generation": 20,
+        "freshMedia": true,
+        "foreground": true,
+        "ready": "complete",
+        "viewport": [
+          960,
+          540
+        ],
+        "fitted": true,
+        "layout": true,
+        "officialMessage": "全力加载中…\n蓝光",
+        "videoCount": 1,
+        "media": {
+          "time": 1.171478,
+          "ready": 4,
+          "paused": false,
+          "muted": false,
+          "volume": 0.5,
+          "size": [
+            1920,
+            1080
+          ],
+          "frames": 14,
+          "dropped": 0,
+          "audioBytes": 11552,
+          "error": 0
+        }
+      }
+    }
+  ],
+  "processId": "27192",
+  "webViewTargets": 1,
+  "finished": "2026-10-24T00:33:29.929Z"
+}

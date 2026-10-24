@@ -1,0 +1,7 @@
+{
+  "name": "living-room-live-tools",
+  "private": true,
+  "type": "module",
+  "scripts": { "probe": "node tools/probe-source.mjs" },
+  "devDependencies": { "protobufjs": "8.8.1" }
+}

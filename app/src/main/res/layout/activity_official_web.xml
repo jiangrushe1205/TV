@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent" android:background="#000000">
+
+    <cn.v65.live.ui.RemoteWebView android:id="@+id/webView"
+        android:layout_width="match_parent" android:layout_height="match_parent"
+        android:focusable="true" android:focusableInTouchMode="true" />
+    <FrameLayout android:id="@+id/customHost" android:layout_width="match_parent"
+        android:layout_height="match_parent" android:background="#000000" android:visibility="gone" />
+
+    <TextView android:id="@+id/loadingCover" android:layout_width="match_parent"
+        android:layout_height="match_parent" android:background="#000000" android:gravity="center"
+        android:text="正在打开官方直播…" android:textColor="@color/text_secondary" android:textSize="18sp"
+        android:importantForAccessibility="no" />
+
+    <TextView android:id="@+id/channelToast" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_gravity="top|end" android:layout_margin="18dp"
+        android:padding="12dp" android:background="#DD151C20" android:textColor="@color/text_primary"
+        android:textSize="18sp" android:visibility="gone" android:importantForAccessibility="no" />
+
+    <LinearLayout android:id="@+id/statusPanel" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:layout_gravity="bottom" android:orientation="horizontal"
+        android:gravity="center_vertical" android:padding="12dp" android:background="#EE151C20" android:visibility="gone">
+        <TextView android:id="@+id/webStatus" android:layout_width="0dp" android:layout_weight="1"
+            android:layout_height="wrap_content" android:textColor="@color/text_primary" android:textSize="14sp" />
+        <Button android:id="@+id/statusRetry" style="@style/TvButton" android:layout_width="wrap_content"
+            android:layout_height="44dp" android:text="刷新" />
+        <Button android:id="@+id/statusOperate" style="@style/TvButton" android:layout_width="wrap_content"
+            android:layout_height="44dp" android:text="网页操作" />
+    </LinearLayout>
+
+    <LinearLayout android:id="@+id/webToolbar" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:layout_gravity="top" android:orientation="vertical"
+        android:padding="12dp" android:background="#F0151C20" android:visibility="gone">
+        <TextView android:id="@+id/webTitle" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp" android:textColor="@color/text_primary" android:textSize="16sp" />
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+            <Button android:id="@+id/mediaButton" style="@style/TvButton" android:layout_width="wrap_content" android:layout_height="44dp" android:text="播放/暂停" />
+            <Button android:id="@+id/reloadButton" style="@style/TvButton" android:layout_width="wrap_content" android:layout_height="44dp" android:text="刷新" />
+            <Button android:id="@+id/favoriteButton" style="@style/TvButton" android:layout_width="wrap_content" android:layout_height="44dp" android:text="收藏" />
+            <Button android:id="@+id/pointerButton" style="@style/TvButton" android:layout_width="wrap_content" android:layout_height="44dp" android:text="网页操作" />
+            <Button android:id="@+id/exitButton" style="@style/TvButton" android:layout_width="wrap_content" android:layout_height="44dp" android:text="退出" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout android:id="@+id/channelPanel" android:layout_width="340dp" android:layout_height="match_parent"
+        android:orientation="vertical" android:padding="12dp" android:background="#F0151C20" android:visibility="gone">
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="电视频道"
+            android:textSize="20sp" android:textStyle="bold" android:textColor="@color/text_primary" android:layout_marginBottom="8dp" />
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+            <Button android:id="@+id/cctvTab" style="@style/TvButton" android:layout_width="0dp" android:layout_weight="1" android:layout_height="44dp" android:text="央视" />
+            <Button android:id="@+id/satelliteTab" style="@style/TvButton" android:layout_width="0dp" android:layout_weight="1" android:layout_height="44dp" android:text="卫视" />
+            <Button android:id="@+id/favoritesTab" style="@style/TvButton" android:layout_width="0dp" android:layout_weight="1" android:layout_height="44dp" android:text="收藏" />
+        </LinearLayout>
+        <TextView android:id="@+id/catalogStatus" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:paddingTop="6dp" android:paddingBottom="6dp" android:textColor="@color/text_secondary" android:textSize="11sp" />
+        <TextView android:id="@+id/emptyChannels" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:padding="12dp" android:text="暂无收藏，请按菜单键收藏当前频道" android:textColor="@color/text_secondary"
+            android:textSize="14sp" android:visibility="gone" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@+id/channelList" android:layout_width="match_parent"
+            android:layout_height="0dp" android:layout_weight="1" android:clipToPadding="false" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="←/→ 分类  ↑/↓ 浏览  确定播放  返回关闭"
+            android:textColor="@color/text_secondary" android:textSize="11sp" android:paddingTop="6dp" />
+    </LinearLayout>
+
+    <TextView android:id="@+id/pointerHint" android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:layout_gravity="top|center_horizontal" android:layout_margin="8dp" android:padding="8dp"
+        android:background="#DD151C20" android:text="方向键移动指针 · 确定点击 · 返回恢复选台"
+        android:textColor="@color/text_primary" android:textSize="12sp" android:visibility="gone" />
+</FrameLayout>

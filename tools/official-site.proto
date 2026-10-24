@@ -1,0 +1,31 @@
+syntax = "proto3";
+package official;
+
+// Public field numbers observed in the official PC application's deployed schema.
+message NavigationResponse { uint32 code = 1; Navigation data = 2; string message = 3; }
+message Navigation { repeated Tab tab_list = 2; }
+message Tab { string name = 1; string feed_id = 4; uint32 channel_tag = 10; }
+message PageResponse { uint32 code = 1; Page data = 2; string message = 3; }
+message Page { string feed_id = 1; repeated Module modules = 2; }
+message Module { string module_type = 2; repeated Channel channels = 15; }
+message Channel {
+  string name = 2;
+  string code = 3;
+  string pid = 4;
+  string stream_id = 6;
+  bool is_vip = 7;
+  bool is4k = 8;
+  string group = 11;
+  bool is_limited_free = 14;
+}
+message EpgResponse { uint32 code = 1; repeated Program programs = 2; string message = 3; uint64 updated_at = 4; }
+message Program {
+  string id = 1;
+  string name = 2;
+  uint64 starts_at = 3;
+  uint64 ends_at = 4;
+  string start_time = 5;
+  string end_time = 6;
+  bool is_vip = 8;
+  string copyright_flag = 9;
+}

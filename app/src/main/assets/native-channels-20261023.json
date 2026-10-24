@@ -1,0 +1,443 @@
+[
+  {
+    "id": "cctv1",
+    "name": "CCTV1综合",
+    "channelId": "2024078201",
+    "livePid": "600001859",
+    "defn": "fhd"
+  },
+  {
+    "id": "cctv2",
+    "name": "CCTV2财经",
+    "channelId": "2024075401",
+    "livePid": "600001800",
+    "defn": "fhd"
+  },
+  {
+    "id": "cctv3",
+    "name": "CCTV3综艺",
+    "channelId": "2024068501",
+    "livePid": "600001801",
+    "defn": "fhd"
+  },
+  {
+    "id": "cctv4",
+    "name": "CCTV4中文国际",
+    "channelId": "2029797101",
+    "livePid": "600001814",
+    "defn": "fhd"
+  },
+  {
+    "id": "cctv5",
+    "name": "CCTV5体育",
+    "channelId": "2024078401",
+    "livePid": "600001818",
+    "defn": "fhd"
+  },
+  {
+    "id": "cctv5p",
+    "name": "CCTV5+体育赛事",
+    "channelId": "2024078001",
+    "livePid": "600001817",
+    "defn": "fhd"
+  },
+  {
+    "id": "cctv6",
+    "name": "CCTV6电影",
+    "channelId": "2013693901",
+    "livePid": "600108442",
+    "defn": "fhd"
+  },
+  {
+    "id": "cctv7",
+    "name": "CCTV7国防军事",
+    "channelId": "2024072001",
+    "livePid": "600004092",
+    "defn": "fhd"
+  },
+  {
+    "id": "cctv8",
+    "name": "CCTV8电视剧",
+    "channelId": "2029793001",
+    "livePid": "600001803",
+    "defn": "fhd"
+  },
+  {
+    "id": "cctv9",
+    "name": "CCTV9纪录",
+    "channelId": "2024078601",
+    "livePid": "600004078",
+    "defn": "fhd"
+  },
+  {
+    "id": "cctv10",
+    "name": "CCTV10科教",
+    "channelId": "2024078701",
+    "livePid": "600001805",
+    "defn": "fhd"
+  },
+  {
+    "id": "cctv11",
+    "name": "CCTV11戏曲",
+    "channelId": "2027248701",
+    "livePid": "600001806",
+    "defn": "fhd"
+  },
+  {
+    "id": "cctv12",
+    "name": "CCTV12社会与法",
+    "channelId": "2027248801",
+    "livePid": "600001807",
+    "defn": "fhd"
+  },
+  {
+    "id": "cctv13",
+    "name": "CCTV13新闻",
+    "channelId": "2029797201",
+    "livePid": "600001811",
+    "defn": "fhd"
+  },
+  {
+    "id": "cctv14",
+    "name": "CCTV14少儿",
+    "channelId": "2027248901",
+    "livePid": "600001809",
+    "defn": "fhd"
+  },
+  {
+    "id": "cctv15",
+    "name": "CCTV15音乐",
+    "channelId": "2027249001",
+    "livePid": "600001815",
+    "defn": "fhd"
+  },
+  {
+    "id": "cctv16",
+    "name": "CCTV16奥林匹克",
+    "channelId": "2027249101",
+    "livePid": "600098637",
+    "defn": "fhd"
+  },
+  {
+    "id": "cctv164k",
+    "name": "CCTV16 4K",
+    "channelId": "2027249301",
+    "livePid": "600099502",
+    "defn": "fhd"
+  },
+  {
+    "id": "cctv17",
+    "name": "CCTV17农业农村",
+    "channelId": "2027249401",
+    "livePid": "600001810",
+    "defn": "fhd"
+  },
+  {
+    "id": "cctv4k",
+    "name": "CCTV4K超高清",
+    "channelId": "2029810301",
+    "livePid": "600002264",
+    "defn": "fhd"
+  },
+  {
+    "id": "cctv8k",
+    "name": "CCTV8K超高清",
+    "channelId": "2026774101",
+    "livePid": "600156816",
+    "defn": "fhd"
+  },
+  {
+    "id": "cgtn",
+    "name": "CGTN",
+    "channelId": "2024181701",
+    "livePid": "600014550",
+    "defn": "fhd"
+  },
+  {
+    "id": "cgtnfy",
+    "name": "CGTN法语",
+    "channelId": "2024181801",
+    "livePid": "600084704",
+    "defn": "fhd"
+  },
+  {
+    "id": "cgtney",
+    "name": "CGTN俄语",
+    "channelId": "2024181901",
+    "livePid": "600084758",
+    "defn": "fhd"
+  },
+  {
+    "id": "cgtnalby",
+    "name": "CGTN阿拉伯语",
+    "channelId": "2024182001",
+    "livePid": "600084782",
+    "defn": "fhd"
+  },
+  {
+    "id": "cgtnxby",
+    "name": "CGTN西班牙语",
+    "channelId": "2024182101",
+    "livePid": "600084744",
+    "defn": "fhd"
+  },
+  {
+    "id": "cgtnwyjl",
+    "name": "CGTN纪录",
+    "channelId": "2024182301",
+    "livePid": "600084781",
+    "defn": "fhd"
+  },
+  {
+    "id": "cctvfyjc",
+    "name": "CCTV风云剧场",
+    "channelId": "2025637103",
+    "livePid": "600099658",
+    "defn": "shd"
+  },
+  {
+    "id": "cctvdyjc",
+    "name": "CCTV第一剧场",
+    "channelId": "2026874203",
+    "livePid": "600099655",
+    "defn": "shd"
+  },
+  {
+    "id": "cctvhjjc",
+    "name": "CCTV怀旧剧场",
+    "channelId": "2026874303",
+    "livePid": "600099620",
+    "defn": "shd"
+  },
+  {
+    "id": "bjws",
+    "name": "北京卫视",
+    "channelId": "2024052703",
+    "livePid": "600002309",
+    "defn": "fhd"
+  },
+  {
+    "id": "jsws",
+    "name": "江苏卫视",
+    "channelId": "2024171103",
+    "livePid": "600002521",
+    "defn": "fhd"
+  },
+  {
+    "id": "dfws",
+    "name": "东方卫视",
+    "channelId": "2024054503",
+    "livePid": "600002483",
+    "defn": "fhd"
+  },
+  {
+    "id": "zjws",
+    "name": "浙江卫视",
+    "channelId": "2024054703",
+    "livePid": "600002520",
+    "defn": "fhd"
+  },
+  {
+    "id": "hnws",
+    "name": "湖南卫视",
+    "channelId": "2024054803",
+    "livePid": "600002475",
+    "defn": "fhd"
+  },
+  {
+    "id": "hbws",
+    "name": "湖北卫视",
+    "channelId": "2024171203",
+    "livePid": "600002508",
+    "defn": "fhd"
+  },
+  {
+    "id": "gdws",
+    "name": "广东卫视",
+    "channelId": "2024060903",
+    "livePid": "600002485",
+    "defn": "fhd"
+  },
+  {
+    "id": "gxws",
+    "name": "广西卫视",
+    "channelId": "2024060703",
+    "livePid": "600002509",
+    "defn": "fhd"
+  },
+  {
+    "id": "hljws",
+    "name": "黑龙江卫视",
+    "channelId": "2029797003",
+    "livePid": "600002498",
+    "defn": "fhd"
+  },
+  {
+    "id": "hnws2",
+    "name": "海南卫视",
+    "channelId": "2024055603",
+    "livePid": "600002506",
+    "defn": "fhd"
+  },
+  {
+    "id": "cqws",
+    "name": "重庆卫视",
+    "channelId": "2024061103",
+    "livePid": "600002531",
+    "defn": "fhd"
+  },
+  {
+    "id": "szws",
+    "name": "深圳卫视",
+    "channelId": "2024061303",
+    "livePid": "600002481",
+    "defn": "fhd"
+  },
+  {
+    "id": "scws",
+    "name": "四川卫视",
+    "channelId": "2024061403",
+    "livePid": "600002516",
+    "defn": "fhd"
+  },
+  {
+    "id": "henanws",
+    "name": "河南卫视",
+    "channelId": "2029797303",
+    "livePid": "600002525",
+    "defn": "fhd"
+  },
+  {
+    "id": "fjdnhz",
+    "name": "东南卫视",
+    "channelId": "2024061503",
+    "livePid": "600002484",
+    "defn": "fhd"
+  },
+  {
+    "id": "gzhws",
+    "name": "贵州卫视",
+    "channelId": "2024061603",
+    "livePid": "600002490",
+    "defn": "fhd"
+  },
+  {
+    "id": "jxws",
+    "name": "江西卫视",
+    "channelId": "2024061703",
+    "livePid": "600002503",
+    "defn": "fhd"
+  },
+  {
+    "id": "lnws",
+    "name": "辽宁卫视",
+    "channelId": "2024171303",
+    "livePid": "600002505",
+    "defn": "fhd"
+  },
+  {
+    "id": "ahws",
+    "name": "安徽卫视",
+    "channelId": "2024171403",
+    "livePid": "600002532",
+    "defn": "fhd"
+  },
+  {
+    "id": "hbws2",
+    "name": "河北卫视",
+    "channelId": "2024171503",
+    "livePid": "600002493",
+    "defn": "fhd"
+  },
+  {
+    "id": "sdws",
+    "name": "山东卫视",
+    "channelId": "2029787903",
+    "livePid": "600002513",
+    "defn": "fhd"
+  },
+  {
+    "id": "tjws",
+    "name": "天津卫视",
+    "channelId": "2019927003",
+    "livePid": "600152137",
+    "defn": "fhd"
+  },
+  {
+    "id": "jlws",
+    "name": "吉林卫视",
+    "channelId": "2025561503",
+    "livePid": "600190405",
+    "defn": "fhd"
+  },
+  {
+    "id": "shanxiws",
+    "name": "陕西卫视",
+    "channelId": "2029795103",
+    "livePid": "600190400",
+    "defn": "fhd"
+  },
+  {
+    "id": "nxws",
+    "name": "宁夏卫视",
+    "channelId": "2025608503",
+    "livePid": "600190737",
+    "defn": "fhd"
+  },
+  {
+    "id": "nmgws",
+    "name": "内蒙古卫视",
+    "channelId": "2025561203",
+    "livePid": "600190401",
+    "defn": "fhd"
+  },
+  {
+    "id": "ynws",
+    "name": "云南卫视",
+    "channelId": "2025561303",
+    "livePid": "600190402",
+    "defn": "fhd"
+  },
+  {
+    "id": "shanxiws2",
+    "name": "山西卫视",
+    "channelId": "2025560803",
+    "livePid": "600190407",
+    "defn": "fhd"
+  },
+  {
+    "id": "qhws",
+    "name": "青海卫视",
+    "channelId": "2025559103",
+    "livePid": "600190406",
+    "defn": "fhd"
+  },
+  {
+    "id": "xzws",
+    "name": "西藏卫视",
+    "channelId": "2025558003",
+    "livePid": "600190403",
+    "defn": "fhd"
+  },
+  {
+    "id": "cetv1",
+    "name": "CETV1",
+    "channelId": "2022823801",
+    "livePid": "600171827",
+    "defn": "fhd"
+  },
+  {
+    "id": "gxpd",
+    "name": "国学频道",
+    "channelId": "2029360403",
+    "livePid": "600213139",
+    "defn": "fhd"
+  },
+  {
+    "id": "xjws",
+    "name": "新疆卫视",
+    "channelId": "2019927403",
+    "livePid": "600152138",
+    "defn": "fhd"
+  }
+]
