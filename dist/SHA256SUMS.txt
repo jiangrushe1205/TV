@@ -1,0 +1,2 @@
+14338eaf15d7d4d7a17fd5d1ddfb47067cb58ce422fb8a4dc8b878a76b4762a9  living-room-live-v0.5.0-cache-debug.apk
+9386cfbe4dd61679b5a7826855cb76696675ebfa3509b3600412a1771aa132b0  living-room-live-v0.5.0-cache-source.zip
